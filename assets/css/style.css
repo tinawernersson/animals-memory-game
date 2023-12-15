@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Nunito:wght@300&family=Quicksand:wght@600;700&display=swap');
+
+body {
+    background-image: ;
+}
+
+/*Main*/
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
