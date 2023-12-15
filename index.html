@@ -6,17 +6,27 @@
     <title>Animals memory game</title>
     <!--Stylesheet-->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!--Fontawesome kit-->
+  <script src="https://kit.fontawesome.com/242010bdf7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-      <h1>Animals memory game</h1>
+  <h1 class="heading">
+    <i class="fa-solid fa-puzzle-piece"></i> Animals memory game
+  </h1>
 
-    </header>
-    <main>
+  <div class="game-area">
 
-    </main>
-    <footer>
+  </div>
 
-    </footer>
+  <div class="time-area">
+      <p class="timer">Time: <span id="time">0</span></p>
+  </div>
+
+  <div class="actions">
+    <button onclick="restart()">Restart</button>
+</div>
+
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
