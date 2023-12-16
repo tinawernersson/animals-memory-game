@@ -16,14 +16,32 @@ h1 {
     color: lightpink;
 }
 
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: lightpink;
+}
+
 .game-area {
     display: grid;
     justify-content: center;
-    
+    }
 
-}
+    .game-area > div {
+        height: 25px;
+        width: 25px;
+        border-radius: 15px;
+    }
 
 .actions, .time-area {
     display: flex;
     justify-content: end;
+}
+
+.actions button {
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: black;
 }
