@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Nunito:wght@300&family=Quicksand:wght@600;700&display=swap');
 
-* {
+body {
 max-width: 100vw;
 max-height: 100vh;
+background-color: darkgreen;
+}
+
+
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    color: lightpink;
+}
+
+.game-area {
+    display: grid;
+    justify-content: center;
+    
+
+}
+
+.actions, .time-area {
+    display: flex;
+    justify-content: end;
 }
