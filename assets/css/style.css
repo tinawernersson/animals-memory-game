@@ -39,7 +39,7 @@ p {
   margin-top:75px;
       }
 
-    .game-area > button {
+    .game-area > div {
         height: 85px;
         width: 85px;
         border-radius: 15px;
@@ -67,4 +67,8 @@ p {
     background-color: #ffffff;
     color: black;
     margin-bottom: 50px;
+}
+
+.actions > button:hover {
+    background-color: yellow;
 }

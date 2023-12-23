@@ -14,3 +14,10 @@ function wrongPair() {
 
 }
 
+function restartGame() {
+
+}
+
+function timeCounter() {
+    
+}
