@@ -20,6 +20,15 @@ p {
     color: black;
 }
 
+.timer {
+    margin-bottom: 2px;
+}
+
+.moves {
+    margin-top: 2px;
+}
+
+
 .game-area {
     display: grid;
   justify-content: center;
@@ -28,7 +37,7 @@ p {
   grid-template-columns: repeat(6, 100px);
   grid-template-rows: repeat(4);
   margin-top:75px;
-    }
+      }
 
     .game-area > button {
         height: 85px;
@@ -42,16 +51,20 @@ p {
         border: 3px solid black;
     }
 
-.actions, .timer, .moves  {
+.time-area, .actions {
     display: flex;
-    justify-content: end;
-    margin-right:35px;
+    align-items: center;
+    flex-direction: column;    
 }
 
-.actions button {
+.actions > button {
+    display: flex;
+    justify-content: center;
     padding: 8px 16px;
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     border-radius: 10px;
     background-color: #ffffff;
     color: black;
+    margin-bottom: 50px;
 }
