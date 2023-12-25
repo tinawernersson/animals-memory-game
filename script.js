@@ -19,8 +19,7 @@ const owlCard = document.getElementById('owl');
 //Event listeners
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', restartGame); {
-    location.reload();
-  }, false);
+}
 
 
 
