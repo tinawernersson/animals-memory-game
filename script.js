@@ -1,5 +1,4 @@
 // Variables
-const startButton = document.getElementById('start');
 const restartButton = document.getElementById('restart');
 const moves = document.getElementById('move');
 const timer = document.getElementById('time');
@@ -17,16 +16,17 @@ const mouseCard = document.getElementById('mouse');
 const owlCard = document.getElementById('owl');
 
 //Event listeners
-startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', restartGame); {
 }
 
 
 
 let time = 0;
+let cards = [catCard, cowCard, dogCard, elephantCard, guineapigCard, horseCard, lambCard, butteflyfishCard, lionCard, monkeyCard, mouseCard, owlCard]
 
 function startGame () {
-    cardArray.sort ();
+    let cards = 'onclick';
+    cardsArray.sort ();
 }
 
 function flipCard() {
