@@ -14,6 +14,7 @@ const lionCard = document.getElementById('lion');
 const monkeyCard = document.getElementById('monkey');
 const mouseCard = document.getElementById('mouse');
 const owlCard = document.getElementById('owl');
+const 
 
 //Event listeners
 restartButton.addEventListener('click', restartGame); {
