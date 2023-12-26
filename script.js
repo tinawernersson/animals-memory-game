@@ -2,36 +2,24 @@
 const restartButton = document.getElementById('restart');
 const moves = document.getElementById('move');
 const timer = document.getElementById('time');
-const catCard = document.getElementById('cat');
-const cowCard = document.getElementById('cow');
-const dogCard = document.getElementById('dog');
-const elephantCard = document.getElementById('elephant');
-const guineapigCard = document.getElementById('guinea-pig');
-const horseCard = document.getElementById('horse');
-const lambCard = document.getElementById('lamb');
-const butteflyfishCard = document.getElementById('butterfly-fish');
-const lionCard = document.getElementById('lion');
-const monkeyCard = document.getElementById('monkey');
-const mouseCard = document.getElementById('mouse');
-const owlCard = document.getElementById('owl');
-const 
+const cards = document.getElementsByClassName('cards');
+
 
 //Event listeners
 restartButton.addEventListener('click', restartGame); {
 }
+cards.addEventListener('click')
+timer.addEventListener()
+moves.addEventListener('click')
 
-
-
-let time = 0;
-let cards = [catCard, cowCard, dogCard, elephantCard, guineapigCard, horseCard, lambCard, butteflyfishCard, lionCard, monkeyCard, mouseCard, owlCard]
+//Functions
 
 function startGame () {
-    let cards = 'onclick';
     cardsArray.sort ();
 }
 
 function flipCard() {
-
+this.classList.toggle('flip');
 }
 
 function correctPair() {
