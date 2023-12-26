@@ -29,65 +29,37 @@ p {
 
 .time-area, .actions {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100px;  
-    margin-left: 30px;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;  
     margin-top: 50px;
 
 }
 
 .timer {
-    margin-bottom: 2px;
+    margin-right: 5px;
 }
 
 .moves {
-    margin-top: 2px;
+    margin-left: 5px;
 }
 
 .actions > button {
     width: 110px;
-    padding: 8px 16px;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     border-radius: 10px;
     background-color: #ffffff;
     color: black;
     text-align: center;
+    margin-top: -25px;
+    margin-bottom: 20px;
 
 }
 
 .actions > button:hover {
     background-color: yellow;
 }
-
-#restart 
-
-.card-front,
-.card-back {
-  backface-visibility: hidden;
-}
-.card-back > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    position: absolute;
-}
-
-.card-back {
-position:absolute;
-transform: rotateY(180deg);
-}
-
-.card-front {
-    transform: rotateX(0deg);    
-  }
-
-  /*This code makes the card shrink to 97% of it's size when clicking on it*/
-  .card-front:active {
-transform: scale(.97);
-transition: transform .2s;
-  }
 
 .cards {
     display: grid;
@@ -99,17 +71,43 @@ transition: transform .2s;
   perspective: 1000px;
       }
 
-    .cards > div {
+    .cards > div{
+        /*Size of the cards*/
         height: 100px;
         width: 100px;
-        border-radius: 15px;
-        background-color: yellow;
+        /*To center The image of the pawprints on the cards*/
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 30px;
+        border-radius: 15px;
+        background-color: yellow;
+      font-size: 30px;
         border: 3px solid black;
-    transform-style: preserve-3d;
-    transition: transform .2s;
+        transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        transition: .2s;
+    
     }
+
+.card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+
+  /*This code makes the card shrink to 97% of it's size when clicking on it*/
+  .card-front:active {
+transform: scale(.97);
+transition: .2s;
+  }
+
+  .card-back{
+    backface-visibility: hidden;
+  }
+
+
+    
 
