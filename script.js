@@ -2,15 +2,15 @@
 const restartButton = document.getElementById('restart');
 const moves = document.getElementById('move');
 const timer = document.getElementById('time');
-const cards = document.getElementsByClassName('cards');
+const cards = document.querySelectorAll('cards');
 
 
 //Event listeners
-restartButton.addEventListener('click', restartGame); {
-}
-cards.addEventListener('click')
-timer.addEventListener()
-moves.addEventListener('click')
+restartButton.addEventListener('click', restartGame);
+cards.forEach(card => card.addEventListener('click', flipCard));
+timer.addEventListener();
+moves.addEventListener('click');
+
 
 //Functions
 
@@ -19,7 +19,8 @@ function startGame () {
 }
 
 function flipCard() {
-this.classList.toggle('flip');
+console.log('I was clicked!');
+console.log(this);
 }
 
 function correctPair() {
